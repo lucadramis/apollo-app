@@ -100,6 +100,7 @@ Component {
                     {!loading && 
                     <div>
                         {/*JSON.stringify(data, null, 2)*/}
+                        
                         <img className="imguser" src={data.me.images[0].url} width="100" height="100"></img>
                         <div>nome utente: {data.me.display_name}</div>
                         <div>link: {data.me.href}</div>
@@ -156,7 +157,7 @@ Component {
                                 {data.me.top_artists.map((item, idx) =>
                                   <tr>
                                     <td><div>{item.name}</div></td>
-                                    <td><div><img src={item.images[2].url}style={{width:'100',height:'100'}}/></div></td>
+                                    <td><div><img id="album"src={item.images[2].url} style={{width:'100',height:'100'}}/></div></td>
 
 
                                     
